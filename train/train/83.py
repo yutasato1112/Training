@@ -1,4 +1,5 @@
 import random
+import time
 lists=[]
 a=str(input("please your hands"))
 ram=str(random.randint(0,2))
@@ -10,7 +11,10 @@ for i in range(2):
     lists[i]=int(lists[i])
 a=int(a)
 ram=int(ram)
-win=[[0,1],[1,2],[2,0]]
+
+for i in range(3,0,-1):
+    print(i)
+    time.sleep(1)
 
 if a>2:
     print("cannot take number")
